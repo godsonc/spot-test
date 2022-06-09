@@ -1,0 +1,13 @@
+.container-lg{
+    background-color: rgb(115, 41, 235);
+    width: 52vw;
+    height: 60vh;
+    position: absolute;
+    top: 333px;
+    left: 24%;
+    border-radius: 8px;
+}
+
+.row{
+    display: block;
+}
