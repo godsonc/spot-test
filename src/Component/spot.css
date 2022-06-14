@@ -13,9 +13,9 @@
     margin-left: 41%;
     margin-right: auto;
     width: 15%;
-    position: absolute;
     top: 130px;
     left: 30px;
+    position: fixed;
 }
 
 .App-header {
