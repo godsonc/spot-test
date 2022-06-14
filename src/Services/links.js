@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://api.football-data.org/v4/competitions/",
+  baseURL: "http://api.football-data.org/v4/",
 });
 
 instance.interceptors.request.use(
