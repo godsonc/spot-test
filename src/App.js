@@ -1,4 +1,3 @@
-import { Stack } from "@mui/material";
 import React from "react";
 import "./App.css";
 import League from "./Component/league";
@@ -11,7 +10,6 @@ function App() {
         <Spotify />
         <League />
       </header>
-      <Stack />
     </div>
   );
 }
