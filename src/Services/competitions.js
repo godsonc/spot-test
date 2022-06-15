@@ -1,6 +1,6 @@
 import http from "./http";
 
-export const fetchAllCompetitions = async () => {
-  const res = await http.get("competitions");
-  return res.competitions;
+export const fetchAllDev = async () => {
+  const res = await http.get("/computer-software-development");
+  return res.data;
 };

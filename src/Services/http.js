@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://api.football-data.org/v4/",
+  baseURL: "https://api.terawork.com/service-categories/sellers-services/",
 });
 
 instance.interceptors.request.use(

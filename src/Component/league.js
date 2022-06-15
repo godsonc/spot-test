@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./league.css";
-import { fetchAllCompetitions } from "../services/competitions";
+import { fetchAllDev } from "../services/competitions";
 
 const League = () => {
-  const [league, setLeague] = useState([]);
+  const [dev, setDev] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetchAllCompetitions()
+    fetchAllDev()
       .then((res) => {
-        setLeague(res.competitions);
+        setDev(res.data);
         setLoading(false);
       })
       .catch((err) => {
