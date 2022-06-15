@@ -1,6 +1,33 @@
-import http from "./links";
+import axios from "axios";
 
-export const fetchAllCompetitions = async () => {
-  const res = await http.get("/competitions/");
-  return res.competitions;
+const instance = axios.create({
+  baseURL: "https://api.football-data.org/v4/",
+});
+
+instance.interceptors.request.use(
+  (config) => {
+    config.headers["Content-Type"] = "application/type";
+
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
+const handleSuccess = (res) => {
+  return res;
 };
+
+const handleError = (error) => {
+  return Promise.reject(error);
+};
+
+instance.interceptors.response.use(
+  (response) => {
+    return handleSuccess(response);
+  },
+  (error) => handleError(error)
+);
+
+export default instance;

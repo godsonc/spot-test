@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./league.css";
-import { fetchAllCompetitions } from "../Services/http";
+import { fetchAllCompetitions } from "../services/competitions";
 
 const League = () => {
   const [league, setLeague] = useState([]);

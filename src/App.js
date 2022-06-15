@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import League from "./Component/league";
-import Spotify from "./Component/spot";
+import League from "./component/league";
+import Spotify from "./component/spotify";
 
 function App() {
   return (
